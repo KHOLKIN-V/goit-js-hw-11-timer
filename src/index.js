@@ -16,10 +16,11 @@ class CountdownTimer {
     }
     start () {
         setInterval(() => {
-            const htmlDays = document.querySelector('span[data-value = "days"]')
-            const htmlHours = document.querySelector('span[data-value = "hours"]')
-            const htmlMins = document.querySelector('span[data-value = "mins"]')
-            const htmlSecs = document.querySelector('span[data-value = "secs"]')
+            const idOfTimer = document.getElementById(this.selector);
+            const htmlDays = idOfTimer.querySelector('span[data-value = "days"]')
+            const htmlHours = idOfTimer.querySelector('span[data-value = "hours"]')
+            const htmlMins = idOfTimer.querySelector('span[data-value = "mins"]')
+            const htmlSecs = idOfTimer.querySelector('span[data-value = "secs"]')
         
             const currentTime = Date.now();
             const time = this.targetDate - currentTime;
