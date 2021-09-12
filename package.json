@@ -24,5 +24,8 @@
     "gh-pages": "^3.2.3",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-nuke-dist": "^1.0.1"
+  },
+  "devDependencies": {
+    "posthtml-include": "^1.7.1"
   }
 }
