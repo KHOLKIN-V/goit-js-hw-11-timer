@@ -16,7 +16,7 @@ class CountdownTimer {
     }
     start () {
         setInterval(() => {
-            const idOfTimer = document.getElementById(this.selector);
+            const idOfTimer = document.querySelector(this.selector);
             const htmlDays = idOfTimer.querySelector('span[data-value = "days"]')
             const htmlHours = idOfTimer.querySelector('span[data-value = "hours"]')
             const htmlMins = idOfTimer.querySelector('span[data-value = "mins"]')
